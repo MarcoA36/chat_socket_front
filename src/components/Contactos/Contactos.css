@@ -1,0 +1,41 @@
+.sticky {
+  position: sticky;
+}
+
+
+.lista_contactos {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.contacto-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contacto-item:hover {
+  background-color: #f0f0f0;
+}
+
+
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-username {
+  font-size: 1.1em;
+}
+
+
+.buttons_group-contactos {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}

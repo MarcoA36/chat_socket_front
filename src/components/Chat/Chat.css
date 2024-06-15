@@ -1,0 +1,131 @@
+
+
+.chat_form {
+  display: flex;
+  gap: 5px;
+}
+
+
+.chat_content {
+  padding: 0 4px;
+}
+
+.chat_content ul {
+  padding: 0;
+}
+
+.chat_content .conversation-username {
+  font-size: 1.25rem;
+  /* color: green; */
+}
+
+
+#messages {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #messages li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+  }
+  
+  .sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    color: black;
+  }
+  
+  .received {
+    background-color: #835454;
+    align-self: flex-start;
+    text-align: left;
+  }
+
+
+   .conversations_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .conversation-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+  }
+  
+  .conversation-item:hover {
+    background-color: #f0f0f0;
+  }
+
+  .conversation-item:hover .conversation-username {
+ color: black;
+  }
+  
+  .profile-picture,
+  .profile-initial {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .profile-picture {
+    object-fit: cover;
+  }
+  
+  .profile-initial {
+    background-color: #555; 
+  }
+  
+  .conversation-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .conversation-details .conversation-username {
+    color: aqua;
+
+  }
+  
+  .conversation-message {
+    color: #555;
+    font-size: 0.9em;
+  }
+
+  
+  .unread-count {
+    width: 24px;
+    height: 24px;
+    background-color: rgb(91, 213, 111);
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+  
+
+@media (max-width: 768px) {
+  .chat {
+    padding: 10px;
+  }
+}
