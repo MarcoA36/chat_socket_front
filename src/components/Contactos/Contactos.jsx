@@ -95,8 +95,8 @@ const Contactos = () => {
 
   const handleClickContacto = (contacto) => {
     // Verifica que contacto tenga un id antes de navegar
-    if (contacto && contacto._id) {
-      navigate(`/chat/${contacto._id}`);
+    if (contacto && contacto.id) {
+      navigate(`/chat/${contacto.id}`);
     } else {
       console.error('Contacto no tiene un id:', contacto);
     }
